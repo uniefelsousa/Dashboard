@@ -1,0 +1,234 @@
+/* Estilo do corpo geral da página.  */
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(26, 35, 58);
+
+  }
+/* Borda em todo HTML */
+  * {
+    box-sizing: border-box;
+    
+  }
+  
+  /* estilo do menu lateral */
+  .sidebar {
+    margin-top: 50px;  
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0c1425;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 2px;
+    white-space: nowrap;
+  }
+
+  /* estilo dos textos do menu lateral */
+  .sidebar a {
+    padding: 8px 8px 8px 18px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;  
+  }
+  
+  /* Quando coloca o mouse sobre o menu lateral */
+  .sidebar a:hover {
+    background-image: linear-gradient( to right, #00b5fd 0%, #0065fd 100%);
+    border-radius: 5px;
+  }
+  
+  /* Parametrizando a altura do HTML */
+ html{
+   height: 100%;
+ }
+  
+  .material-icons,
+  .icon-text {
+    vertical-align: middle;
+  }
+  
+  .material-icons {
+    padding-bottom: 3px;
+    margin-right: 20px;
+  }
+  
+  /* Menu com o corpo da página */
+  #main {
+    padding: 16px;
+    padding-top: 150px;
+    margin-left: 60px;
+    transition: margin-left 0.5s;
+    color:white;
+    
+  }
+  
+  /* Responsividade do menu lateral */
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+    .sidebar a {
+      font-size: 18px;
+    }
+  }
+
+  /* cabeçalho principal */
+  #header{
+      position: fixed;
+      top: 0;
+      background-color: #0c1425;
+      color:white;
+      height: 50px;
+      padding-left: 10px;
+      width: 100%;
+      transition: margin-left 0.5s;
+      font-family: "Lato", sans-serif;
+      font-size: 30px;
+      padding-top:  0;
+      margin-left: -8px; 
+  }
+
+  /* Texto do cabeçalho principal.   */
+  #text_header{
+    position: absolute;
+    top:-15px;
+    left: 60px;
+    font-size: 25px;
+    color: white;
+}
+
+  /* Logo do Itaú */
+  #logo{
+    width: 45px;
+    height: 45px;
+    margin-left: -3px;
+}
+
+  /* Icone do usuário logado no Dashboard. */
+#usuario{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    top:3px;
+    right: 10px;
+}
+
+  /* Estilo dos icones do Menu Lateral. */
+.icone-lateral{
+  width: 30px;
+  height: 30px;
+  padding-bottom: 3px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+  /* cabeçalho secundário */
+  #header2{
+    margin-top: 23px;
+    margin-left: 51px; 
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    transition: margin-left 0.5s;
+    padding-left: 18px;
+    font-size: 25px;
+    color: white;
+    background-image: linear-gradient( to right, #00b5fd 0%, #0065fd 50%);
+  }
+
+  /* texto do cabeçalho secundário */
+  #text_header2{
+      font-size: 15px;
+      margin-top: -25px;
+  }
+
+  /* Corpo da página Responsivo. */
+
+  /* Deixar o corpo da página flutuante para a esquerda e com padding. */
+  [class*="col-"] {
+    float: left;
+    padding: 5px;
+  }
+   
+  /* Largura para smartphones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* Largura para Tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* Largura para desktop: */
+    .col-1 {width: 8.33%;}
+    .col-15{width: 14.2%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  #teste {
+    height: 140px;
+    background-color: #272E48;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(255, 237, 237, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: 20px;
+    border: 2px solid ;
+
+  }
+
+  #teste_2{
+    color:white;
+    height: 50px;
+    width: 50px;
+    border-radius:50% ;
+    margin: 0 auto;
+    position: relative;
+    top:35%;
+    /* background-image: linear-gradient( to right, #c0d64a 0%, #90d65d 100%); */
+    background-image: linear-gradient( to right, #ff5934 0%, #a50000 100%);
+    
+  }
+
+  #log{
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    background-color: white;
+    height: 100px;
+    width: 150px;
+    display: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+  }
+
+
+  /* Tabela Responsiva */
